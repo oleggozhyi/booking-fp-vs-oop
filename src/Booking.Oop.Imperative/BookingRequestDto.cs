@@ -8,10 +8,10 @@ namespace Booking.Oop.Imperative
 {
     public class BookingRequestDto
     {
-        public int SeatsRequested { get; }
-        public string PersonName { get; }
-        public string Date { get; }
-        public int DurationHours { get; }
+        public int SeatsRequested { get; set; }
+        public string PersonName { get; set; }
+        public string Date { get; set; }
+        public int DurationHours { get; set; }
         public string Phone { get; set; }
     }
 }

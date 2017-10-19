@@ -8,7 +8,11 @@ using System.Threading.Tasks;
 
 namespace Booking.Oop.Imperative.DomainLogic
 {
-    public class BookingService
+    public interface IBookingService
+    {
+        TableBooking CreateBooking(BookingRequestDto bookingRequestDto);
+    }
+    public class BookingService : IBookingService
     {
         private readonly IAvailableTableFinder _availableTableFinder;
         private readonly IDataService _dataService;

@@ -14,6 +14,7 @@ namespace Booking.Oop.Imperative.DomainLogic
         }
         public TableBooking(Guid id, int seatsRequested, string requestedBy, string phone, DateTimeOffset date, int durationHours)
         {
+            Id = id;
             Phone = phone;
             SeatsRequested = seatsRequested;
             RequestedBy = requestedBy;
